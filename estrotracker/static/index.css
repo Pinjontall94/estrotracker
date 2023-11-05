@@ -20,7 +20,7 @@
  */
 
 body {
-    background-color: pink;
+    background-color: #fcd9d9;
 }
 
 /* index.css */
@@ -43,6 +43,7 @@ body {
 .container__para {
     padding: 8rem;
     font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
 }
 
 
@@ -82,12 +83,16 @@ body {
 
 /* Element: suit */
 .card__suit {
+    font-family: 'Lobster', serif;
     font-weight: bold;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 /* Element: value */
 .card__value {
+    font-family: 'Lobster', serif;
+    font-size: 1.5rem;
     text-align: center;
 }
 
