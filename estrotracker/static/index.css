@@ -1,6 +1,32 @@
+/*
+  Helpful notes from a robot, re: ordering CSS attributes:
+    1. Layout (e.g., width, height, margin, padding, display, position, float, etc.)
+    
+    2. Typography (e.g., font-size, font-weight, line-height, font-family, etc.)
+
+    3. Box model (e.g., border, border-radius, box-shadow, background-color, etc.)
+
+    4. Text (e.g., color, text-align, text-transform, etc.)
+
+    5. Other (e.g., transition, transform, opacity, etc.)
+
+
+  So maybe another way to think of this would be:
+    1. Position stuff
+    2. Font stuff
+    3. Box & Border
+    4. Text
+    5. Other
+ */
+
+body {
+    background-color: pink;
+}
+
 /* index.css */
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -9,4 +35,70 @@
 
 .container__text {
     text-align: center;
+    font-family: 'Lobster', serif;
+    font-size: 5rem;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container__para {
+    padding: 8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Block: deck */
+.deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Block: card */
+.card {
+    width: 6rem;
+    height: 12rem;
+    padding: 2rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-out;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card--long {
+    width: 12rem;
+    height: 6rem;
+    background-color: #ffe6cc;
+    color: #333;
+}
+
+/* Element: suit */
+.card__suit {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Element: value */
+.card__value {
+    text-align: center;
+}
+
+/* Modifier: red for red suits */
+.card--red {
+    background-color: #f99;
+    color: #333;
+}
+
+/* Modifier: black for black suits */
+.card--black {
+    background-color: #000;
+    color: #fff;
 }

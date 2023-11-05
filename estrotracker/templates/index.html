@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"/>
-    <title>EstroTracker</title>
-</head>
-
-<body>
-    <div class="container">
-        <h1 class="container__text">What's good! :3</h1>
-    </div>
-</body>
-</html>
+{%extends 'layout.html'%}
+{%block content%}
+<div class="container">
+        <h1 class="container__text">EstroTracker</h1>
+        <p class="container__para">
+          Welcome to EstroTracker! A brief introduction: this is a small
+          webapp to track the price of estradiol (and a good project to
+          practice my flask, webscraping, and css skills with). For the
+          work in progress, check the following
+          <a href="{{ url_for('deck') }}">link.</a>
+        </p>
+</div>
+{%endblock%}
