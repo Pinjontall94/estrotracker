@@ -1,0 +1,12 @@
+/* index.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container__text {
+    text-align: center;
+}
