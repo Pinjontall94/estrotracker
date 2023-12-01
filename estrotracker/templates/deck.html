@@ -1,25 +1,31 @@
 {%extends 'layout.html'%}
 {%block content%}
-<div class="deck">
-    <div class="card card--red">
-        <div class="card__suit">Hearts</div>
-        <div class="card__value">7</div>
-    </div>
-    <div class="card card--black">
-        <div class="card__suit">Clubs</div>
-        <div class="card__value">King</div>
-    </div>
-    <div class="card card--red">
-        <div class="card__suit">Diamonds</div>
-        <div class="card__value">Ace</div>
-    </div>
-    <div class="card card--long">
-        <div class="card__suit">Estradiol</div>
-        <div class="card__value">[val I'll get from API]</div>
-    </div>
-<!-- Add more cards here -->
-</div>
 <div class="container">
+    <div class="deck">
+        <div class="card card--red">
+            <div class="card__suit">Hearts</div>
+            <div class="card__value">7</div>
+        </div>
+        <div class="card card--black">
+            <div class="card__suit">Clubs</div>
+            <div class="card__value">King</div>
+        </div>
+        <div class="card card--red">
+            <div class="card__suit">Diamonds</div>
+            <div class="card__value">Ace</div>
+        </div>
+        <div class="card card--estradiol">
+            <div class="card__suit">Estradiol</div>
+            <img src="static/Estradiol.svg" alt="Estradiol Molecule"/>
+            <div class="card__value">[val I'll get from API]</div>
+        </div>
+        <div class="card card--estrone">
+            <div class="card__suit">Estrone</div>
+            <img src="static/Estrone.svg" alt="Estrone Molecule"/>
+            <div class="card__value">[val I'll get from API]</div>
+        </div>
+    <!-- Add more cards here -->
+    </div>
     <p class="container__para">
       <a href="{{ url_for('index') }}">EstroTracker Home</a>
     </p>
